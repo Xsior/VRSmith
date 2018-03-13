@@ -17,7 +17,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
-
+*/VRSmith/Library/*
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -28,6 +28,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+VRSmith/Library
+VRSmith/Library/*
+VRSmith/Temp/UnityLockfile
 
 # =========================
 # Operating System Files
