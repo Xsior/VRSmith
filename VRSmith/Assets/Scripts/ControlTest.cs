@@ -49,8 +49,13 @@ public class ControlTest : MonoBehaviour {
         objectInHand = collidingObject;
         collidingObject = null;
         // 2
-        var joint = AddFixedJoint();
-        joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
+        objectInHand.transform.SetParent(transform, false);
+        objectInHand.transform.localRotation = Quaternion.identity;
+        objectInHand.transform.localPosition = Vector3.zero;
+        objectInHand.GetComponent<Rigidbody>().useGravity = false;
+        objectInHand.GetComponent<Rigidbody>().isKinematic = true;
+        //var joint = AddFixedJoint();
+        //joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
     }
 
     // 3
@@ -108,10 +113,10 @@ public class ControlTest : MonoBehaviour {
         if (Controller.GetHairTriggerUp())
         {
             Debug.Log(gameObject.name + " Trigger Release");
-            if (objectInHand)
-            {
-                ReleaseObject();
-            }
+            //if (objectInHand)
+            //{
+            //    ReleaseObject();
+            //}
         }
 
 
