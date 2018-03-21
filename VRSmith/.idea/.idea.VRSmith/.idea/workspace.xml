@@ -11,21 +11,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControlTest.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControlTest.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControlTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="118">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="32" />
+              <folding>
+                <marker date="1521623563821" expanded="false" signature="6:110" ph="..." />
+                <marker date="1521623563821" expanded="true" signature="153:2504" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="328:412" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="462:620" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="532:563" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="676:723" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="779:826" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="882:997" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="918:958" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="1027:1529" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="1563:1809" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="1858:2133" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="1943:2127" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="2153:2407" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="2206:2237" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="2292:2329" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="2361:2401" ph="{...}" />
+                <marker date="1521623563821" expanded="true" signature="2429:2501" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Smithable.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Smithable.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Smithable.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <marker date="1521620065095" expanded="false" signature="6:50" ph="..." />
                 <marker date="1521620065095" expanded="true" signature="76:868" ph="{...}" />
@@ -47,8 +66,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ControlTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Smithable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlTest.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +103,19 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="VRSmith (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRSmith (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRSmith (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -122,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521619211646</updated>
-      <workItem from="1521619219539" duration="1289000" />
+      <workItem from="1521619219539" duration="2568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1289000" />
+    <option name="totallyTimeSpent" value="2568000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -189,24 +221,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControlTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Smithable.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
             <marker date="1521620065095" expanded="false" signature="6:50" ph="..." />
             <marker date="1521620065095" expanded="true" signature="76:868" ph="{...}" />
             <marker date="1521620065095" expanded="true" signature="143:866" ph="{...}" />
             <marker date="1521620065095" expanded="true" signature="290:740" ph="{...}" />
             <marker date="1521620065095" expanded="true" signature="770:860" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ControlTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="66" selection-end-column="32" />
+          <folding>
+            <marker date="1521623563821" expanded="false" signature="6:110" ph="..." />
+            <marker date="1521623563821" expanded="true" signature="153:2504" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="328:412" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="462:620" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="532:563" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="676:723" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="779:826" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="882:997" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="918:958" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="1027:1529" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="1563:1809" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="1858:2133" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="1943:2127" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="2153:2407" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="2206:2237" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="2292:2329" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="2361:2401" ph="{...}" />
+            <marker date="1521623563821" expanded="true" signature="2429:2501" ph="{...}" />
           </folding>
         </state>
       </provider>
