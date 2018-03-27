@@ -51,7 +51,7 @@ public class ControlTest : MonoBehaviour {
         // 2
         objectInHand.transform.SetParent(transform, false);
         objectInHand.transform.localRotation = Quaternion.AngleAxis(90f, Vector3.forward);
-        objectInHand.transform.localPosition = Vector3.forward * 1f;
+        objectInHand.transform.localPosition = Vector3.forward * 0.2f;
         objectInHand.GetComponent<Rigidbody>().useGravity = false;
         objectInHand.GetComponent<Rigidbody>().isKinematic = true;
 
