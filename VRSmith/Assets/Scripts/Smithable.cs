@@ -5,39 +5,37 @@ namespace Assets.Scripts
 {
     public class Smithable : MonoBehaviour, IPointerClickHandler
     {
+        public ParticleSystem sparks;
+
         private Transform current;
         private Transform parent;
 
         private void OnCollisionEnter (Collision col)
         {
-            if (!col.gameObject.CompareTag("Hammer"))
-            {
+            if (!col.gameObject.CompareTag("Hammer")) {
                 return;
             }
 
             Debug.Log(col.contacts.Length);
 
-            var currentPosition = current.position;
-
-            var parentPos = parent.position;
-            parentPos.x = col.contacts[0].point.x;
-            parent.position = parentPos;
-
-            current.position = currentPosition;
-
-            var parentScale = parent.localScale;
-            parentScale.y *= 0.95f;
-            parentScale.x *= 1.11f;
-            parent.localScale = parentScale;
+            OnHit(col.contacts[0].point);
         }
-        
-        public void OnPointerClick(PointerEventData eventData)
+
+        public void OnPointerClick (PointerEventData eventData)
+        {
+            OnHit(eventData.pointerCurrentRaycast.worldPosition);
+        }
+
+        private void OnHit (Vector3 hitPoint)
         {
             var currentPosition = current.position;
 
             var parentPos = parent.position;
-            parentPos.x = eventData.pointerCurrentRaycast.worldPosition.x;
+            parentPos.x = hitPoint.x;
             parent.position = parentPos;
+
+            sparks.transform.position = hitPoint;
+            sparks.Play();
 
             current.position = currentPosition;
 
