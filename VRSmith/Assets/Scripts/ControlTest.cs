@@ -55,6 +55,9 @@ public class ControlTest : MonoBehaviour {
         objectInHand.GetComponent<Rigidbody>().useGravity = false;
         objectInHand.GetComponent<Rigidbody>().isKinematic = true;
 
+        ExecuteEvents.Execute<IGrabListener>(gameObject, new BaseEventData(EventSystem.current),
+            (handle, data) => handle.OnGrab(objectInHand.GetComponent<Collider>()));
+
         SetControllerVisible(false);
     }
 
@@ -63,6 +66,9 @@ public class ControlTest : MonoBehaviour {
         var rb = objectInHand.GetComponent<Rigidbody>();
         rb.useGravity = true;
         rb.isKinematic = false;
+
+        ExecuteEvents.Execute<IGrabListener>(gameObject, new BaseEventData(EventSystem.current),
+            (handle, data) => handle.OnRelease(objectInHand.GetComponent<Collider>()));
 
         objectInHand.transform.SetParent(null);
         objectInHand = null;

@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: 114062811771930136}
   - component: {fileID: 54106351389590726}
   - component: {fileID: 65182727802905136}
+  - component: {fileID: 138383258168536568}
+  - component: {fileID: 114219512760951510}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -54,7 +56,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &147176
 GameObject:
   m_ObjectHideFlags: 1
@@ -284,6 +286,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
@@ -319,6 +322,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -426,7 +430,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192944}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5890e3cad70bea64d91aef9145ba3454, type: 3}
   m_Name: 
@@ -601,6 +605,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05f2dc85e5344b9a244f006318bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114219512760951510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558f8d557bec6414b9131060a7ca64f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114447739469513990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -612,3 +627,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05f2dc85e5344b9a244f006318bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!138 &138383258168536568
+FixedJoint:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124034}
+  m_ConnectedBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
