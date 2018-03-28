@@ -9,6 +9,8 @@ public class ControlTest : MonoBehaviour {
     private GameObject collidingObject;
     private GameObject objectInHand;
 
+    public LayerMask grabMask;
+
     private SteamVR_Controller.Device Controller
     {
         get { return SteamVR_Controller.Input((int)trackedObj.index); }
@@ -45,6 +47,10 @@ public class ControlTest : MonoBehaviour {
     }
     private void GrabObject()
     {
+        if (!grabMask.ContainsLayer(collidingObject.layer)) {
+            return;
+        }
+
         // 1
         objectInHand = collidingObject;
         collidingObject = null;
