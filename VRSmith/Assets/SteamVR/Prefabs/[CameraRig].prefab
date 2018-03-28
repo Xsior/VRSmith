@@ -605,6 +605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05f2dc85e5344b9a244f006318bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocityVariable: {fileID: 11400000, guid: 13efdf3d2336d5b4a97d2f523a2a3fb2, type: 2}
+  grabMask:
+    serializedVersion: 2
+    m_Bits: 512
+  displayVelocity: 0
 --- !u!114 &114219512760951510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -627,6 +632,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a05f2dc85e5344b9a244f006318bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocityVariable: {fileID: 11400000, guid: e8e0aa585573f1b4cb77dd3d5c7763c6, type: 2}
+  grabMask:
+    serializedVersion: 2
+    m_Bits: 768
+  displayVelocity: 0
 --- !u!138 &138383258168536568
 FixedJoint:
   m_ObjectHideFlags: 1

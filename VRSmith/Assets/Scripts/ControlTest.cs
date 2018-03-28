@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Framework.Data;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,6 +9,8 @@ public class ControlTest : MonoBehaviour {
     private SteamVR_TrackedObject trackedObj;
     private GameObject collidingObject;
     private GameObject objectInHand;
+
+    [SerializeField] private FloatVariable velocityVariable;
 
     public LayerMask grabMask;
     public bool displayVelocity;
@@ -100,9 +103,7 @@ public class ControlTest : MonoBehaviour {
 
     void Update()
     {
-        if (displayVelocity) {
-            Debug.Log("Velocity: " + Controller.velocity.magnitude);
-        }
+        velocityVariable.Value = Controller.velocity.magnitude;
 
         if (!Controller.GetHairTriggerDown()) {
             return;
