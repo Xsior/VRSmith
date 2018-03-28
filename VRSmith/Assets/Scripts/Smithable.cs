@@ -20,8 +20,9 @@ namespace Assets.Scripts
             if (!col.gameObject.CompareTag("Hammer")) {
                 return;
             }
-            
-            OnHit(col.contacts[0].point, col.transform.parent.GetComponent<Rigidbody>().velocity.magnitude);
+
+            var hammerRb = col.transform.parent.GetComponent<Rigidbody>();
+            OnHit(col.contacts[0].point, hammerRb.velocity.magnitude);
         }
 
         private void OnHit (Vector3 hitPoint,float velocity)
@@ -36,13 +37,16 @@ namespace Assets.Scripts
 
             particles.transform.position = hitPoint;
             particles.Play();
-            if (velocity < 1)
-            {
+
+            Debug.Log("Velocity: " + velocity);
+
+            if (velocity < 1) {
                 return;
             }
+
             var parentScale = parent.localScale;
-            parentScale.y *= (0.95f*velocity);
-            parentScale.x *= (1.11f*velocity);
+            parentScale.y *= (0.95f * velocity);
+            parentScale.x *= (1.11f * velocity);
             parent.localScale = parentScale;
         }
 
