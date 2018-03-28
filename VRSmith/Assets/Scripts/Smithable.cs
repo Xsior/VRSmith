@@ -39,14 +39,15 @@ namespace Assets.Scripts
             particles.Play();
 
             Debug.Log("Velocity: " + velocity);
-
-            if (velocity < 1) {
+            if (velocity < 1)
+            {
                 return;
             }
 
             var parentScale = parent.localScale;
-            parentScale.y *= (0.95f * velocity);
-            parentScale.x *= (1.11f * velocity);
+
+            parentScale.y -= (0.01f*velocity);
+            parentScale.x += (0.015f*velocity);
             parent.localScale = parentScale;
         }
 
