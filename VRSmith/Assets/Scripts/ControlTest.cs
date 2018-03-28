@@ -23,6 +23,10 @@ public class ControlTest : MonoBehaviour {
         
         collidingObject = col.gameObject;
     }
+    public GameObject ObjectInHand()
+    {
+        return objectInHand;
+    }
     // 1
     public void OnTriggerEnter(Collider other)
     {

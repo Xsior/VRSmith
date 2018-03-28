@@ -20,9 +20,16 @@ namespace Assets.Scripts
             if (!col.gameObject.CompareTag("Hammer")) {
                 return;
             }
-
+            float velocity = 0;
+            foreach (ControlTest t in FindObjectsOfType<ControlTest>())
+            {
+                if (t.ObjectInHand().CompareTag("Hammer"))
+                {
+                    velocity = t.Controller.velocity.magnitude;
+                }
+            }
             var hammerRb = col.transform.parent.GetComponent<Rigidbody>();
-            OnHit(col.contacts[0].point, hammerRb.velocity.magnitude);
+            OnHit(col.contacts[0].point, velocity);
         }
 
         private void OnHit (Vector3 hitPoint,float velocity)
