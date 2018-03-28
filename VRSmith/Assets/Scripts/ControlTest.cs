@@ -10,6 +10,7 @@ public class ControlTest : MonoBehaviour {
     private GameObject objectInHand;
 
     public LayerMask grabMask;
+    public bool displayVelocity;
 
     public SteamVR_Controller.Device Controller
     {
@@ -99,6 +100,10 @@ public class ControlTest : MonoBehaviour {
 
     void Update()
     {
+        if (displayVelocity) {
+            Debug.Log("Velocity: " + Controller.velocity.magnitude);
+        }
+
         if (!Controller.GetHairTriggerDown()) {
             return;
         }
