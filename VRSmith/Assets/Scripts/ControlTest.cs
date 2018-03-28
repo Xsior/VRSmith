@@ -11,10 +11,11 @@ public class ControlTest : MonoBehaviour {
 
     public LayerMask grabMask;
 
-    private SteamVR_Controller.Device Controller
+    public SteamVR_Controller.Device Controller
     {
         get { return SteamVR_Controller.Input((int)trackedObj.index); }
     }
+
     private void SetCollidingObject(Collider col)
     {
         if (collidingObject || !col.GetComponent<Rigidbody>()) {
