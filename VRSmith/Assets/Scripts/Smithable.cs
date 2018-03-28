@@ -12,7 +12,7 @@ namespace Assets.Scripts
 
         public void OnPointerClick (PointerEventData eventData)
         {
-            OnHit(eventData.pointerCurrentRaycast.worldPosition);
+            OnHit(eventData.pointerCurrentRaycast.worldPosition,1.0f);
         }
 
         private void OnCollisionEnter (Collision col)
@@ -20,11 +20,11 @@ namespace Assets.Scripts
             if (!col.gameObject.CompareTag("Hammer")) {
                 return;
             }
-
-            OnHit(col.contacts[0].point);
+            
+            OnHit(col.contacts[0].point, col.transform.parent.GetComponent<Rigidbody>().velocity.magnitude);
         }
 
-        private void OnHit (Vector3 hitPoint)
+        private void OnHit (Vector3 hitPoint,float velocity)
         {
             var currentPosition = current.position;
 
@@ -36,10 +36,13 @@ namespace Assets.Scripts
 
             particles.transform.position = hitPoint;
             particles.Play();
-
+            if (velocity < 1)
+            {
+                return;
+            }
             var parentScale = parent.localScale;
-            parentScale.y *= 0.95f;
-            parentScale.x *= 1.11f;
+            parentScale.y *= (0.95f*velocity);
+            parentScale.x *= (1.11f*velocity);
             parent.localScale = parentScale;
         }
 
