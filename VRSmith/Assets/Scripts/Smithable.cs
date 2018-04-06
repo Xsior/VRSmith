@@ -38,9 +38,7 @@ namespace Assets.Scripts
             particles.transform.position = hitPoint;
             particles.Play();
 
-            Debug.Log("Velocity: " + velocity);
-            if (velocity < 1)
-            {
+            if (velocity < 1) {
                 return;
             }
 
